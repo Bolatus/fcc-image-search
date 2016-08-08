@@ -1,0 +1,16 @@
+{
+  "name": "fcc-image-search",
+  "version": "1.0.0",
+  "description": "fcc image search project",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Bolat Tussupzhanov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5",
+    "node-rest-client": "^2.0.1"
+  }
+}
