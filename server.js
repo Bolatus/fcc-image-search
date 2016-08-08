@@ -35,7 +35,7 @@ app.get('/api/imagesearch/:picname', function (req, res) {
   });
 
 
-  client.get("https://pixabay.com/api/?key=3059205-7adaf94412520365291c5eeee&q="+req.params.picname+"&page=1&per_page=10", function (data, response) {
+  client.get("https://pixabay.com/api/?key=3059205-7adaf94412520365291c5eeee&q="+req.params.picname+page+"&per_page=10", function (data, response) {
     //tags
     //webformatURL
     //pageURL
@@ -67,6 +67,10 @@ app.get('/api/latest/imagesearch', function (req, res) {
         } 
     });
 });
+
+app.get('/', function (req, res) {
+  res.send('Hello! Welcome to the best image search API :)');
+  });
 
 
 app.listen(PORT, function () {
